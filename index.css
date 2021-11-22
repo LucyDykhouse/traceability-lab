@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    padding: 100px;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    transition: 0.5s;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f7f7f7;
+    box-shadow: 2px 2px 5px rgb(0, 75, 0);
+    transition: 0.5s;
+}
+
+header img {
+    width: 100px;
+    height: 80px;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    display: inline-block;
+    color: rgb(0, 75, 0);
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content .textBox {
+    position: relative;
+    max-width: 600px;
+}
+
+.content .textBox h2 {
+    color: rgb(0, 75, 0);
+    font-size: 4em;
+    line-height: 1.5em;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.content .textBox p {
+    color: black;
+}
+
+.content .textBox a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: rgb(0, 75, 0);
+    color: white;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.content .imageBox {
+    width: 600px;
+    display: flex;
+    padding-right: 50px;
+    margin-top: 50px;
+    justify-content: flex-end;
+}
+
+.content .imageBox img {
+    height: 300px;
+    width: 400px;
+    margin-left: 100px;
+}
+
+.thumbnails {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.thumbnails li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    transition: 0.5s;   
+}
+
+.thumbnails li img {
+    max-width: 60px;
+}
+
+.thumbnails li:hover {
+    transform: translateY(-15px);
+}
